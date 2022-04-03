@@ -1,0 +1,157 @@
+@import './variable.scss';
+@import './breakpont.scss';
+@import './colors.scss';
+@import './grid.scss';
+@import './component/navbar.scss';
+@import './component/Drawer.scss';
+
+
+
+
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+
+*
+{
+    color: inherit;
+    margin: 0;
+}
+.container
+{
+    width:100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+   
+    @include xs
+    {
+        font-size: $font-size-xs ;
+        line-height: $line-height-xs;
+
+    }
+    @include sm
+    {
+        font-size: $font-size-sm;
+        line-height: $line-height-sm;
+    }
+    @include md
+    {
+        font-size:$base-font-size ;
+        line-height:$base-line-height;
+    }
+    @include lg
+    {
+        font-size:$font-size-lg ;
+        line-height:$line-height-lg;
+    }
+    @include xl
+    {
+        font-size:$font-size-xl ;
+        line-height:$line-height-xl;
+    }
+}
+.b-r
+{
+  border-radius: $base-border-radius;
+}
+img 
+{
+    // margin: .5rem;
+    @include xs
+    {
+       width:100%;
+
+    }
+    @include sm
+    {
+       width:100%
+    }
+    @include md
+    {
+      width:100%
+    }
+    @include lg
+    {
+        width:100%
+    }
+    @include xl
+    {
+       width:100%
+    }  
+}
+
+body{
+    font-family: 'Roboto', sans-serif;;
+}
+h1 
+{
+  color:$primary;
+  margin-bottom:$base-margin;  
+}
+
+ul{
+    padding: 0;
+    list-style-type: none;
+
+}
+a{
+    text-decoration:none;
+}
+hr{
+    border:0;
+    border-top:1px dotted #efefef;
+}
+img
+{
+    max-width:100%;
+}
+
+@each $key,$val in $colors
+{
+    .btn-outlined-#{$key}
+    {
+        text-decoration: none;
+        cursor: pointer;
+        display: inline-block;
+        border: 0;
+        padding: $base-padding $base-padding*2;
+        border-radius: $base-border-radius;
+        background-color: white;
+        border: $base-border-thickness solid $val;
+    }
+}
+button{
+    color:white;
+    text-decoration: none;
+    display: inline-block;
+    border:0;
+    background:$primary;
+    border-radius: $base-border-radius;
+    padding:$base-padding;
+    cursor:pointer;
+
+}
+
+
+.error
+{
+    color:$error;
+    border-color:$error;
+    border-style:solid;
+    margin: $base-margin;
+    border-radius: $base-border-radius;
+    padding:$base-padding;
+    border-width: $base-border-thickness;
+}
+
+.notification
+{
+    color:$secondary;
+    border-color:$secondary;
+    border-style:solid;
+    margin: $base-margin;
+    border-radius: $base-border-radius;
+    padding:$base-padding;
+    border-width: $base-border-thickness;
+}

@@ -1,0 +1,39 @@
+.card
+{
+    display:block;
+    padding:$base-padding;
+    border:$base-border-thickness;
+    box-shadow: $base-box-shadow;
+
+     .card-title
+        {
+           padding-bottom: $base-padding;
+           font-weight: bold;
+        }
+     .card-body
+         {
+             
+         }   
+     a 
+     {
+         text-decoration: underline;
+     }    
+}
+
+.selector-2 {
+    background: white;
+    background: -webkit-linear-gradient(-90deg, #31B7D7, #EDAC7D);
+    background: linear-gradient(to right,white, black, gray,white);
+    
+  }
+
+
+
+// .card .card-body
+// {
+
+// }
+
+// .card .card-body a{
+
+// }

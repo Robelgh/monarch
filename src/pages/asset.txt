@@ -1,0 +1,57 @@
+      <nav className='navbar mb-4 bg-gray'>
+        <h2 className='site-title ml-3'>mycompany</h2>
+        <p>hello gangs keep changing</p>
+      </nav>
+    <div className="container">
+        <h1>this is an h1</h1>
+        <a href="#">this is an anchor tag</a>
+        <p className="error">this is an error</p>
+        <p className="notification">this is notification</p>
+        <button className='text-red text-hover-red bg-hover-black border-yellow bg-white'>click me</button>
+        <h2> cards</h2>
+        
+        <div className='row gap-2 justify-flex-center'>
+            <div className='col-12-xs col-5-sm col-3-xl'>
+              <div className='card'>
+                  <h1 className='card-title'>this is  a card title</h1>
+                  <p className='card-body'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde possimus laboriosam numquam voluptates? Doloribus at dignissimos commodi, possimus libero itaque velit minus, omnis, animi quibusdam a sapiente nam doloremque adipisci.</p>
+              </div>
+            </div>
+
+            <div className='col-12-xs col-5-sm col-3-xl'>
+              <div className='card'>
+                  <h1 className='card-title'>this is  a card title</h1>
+                  <p className='card-body'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde possimus laboriosam numquam voluptates? Doloribus at dignissimos commodi, possimus libero itaque velit minus, omnis, animi quibusdam a sapiente nam doloremque adipisci.</p>
+              </div>
+            </div>
+
+            <div className='col-12-xs col-5-sm col-3-xl'>
+              <div className='card'>
+                  <h1 className='card-title'>this is  a card title</h1>
+                  <p className='card-body'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde possimus laboriosam numquam voluptates? Doloribus at dignissimos commodi, possimus libero itaque velit minus, omnis, animi quibusdam a sapiente nam doloremque adipisci.</p>
+              </div>
+            </div>
+
+            <div className='col-12-xs col-5-sm col-3-xl'>
+              <div className='card'>
+                  <h1 className='card-title'>this is  a card title</h1>
+                  <p className='card-body'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde possimus laboriosam numquam voluptates? Doloribus at dignissimos commodi, possimus libero itaque velit minus, omnis, animi quibusdam a sapiente nam doloremque adipisci.</p>
+              </div>
+            </div>
+
+            <div className='col-12-xs col-5-sm col-3-xl'>
+              <div className='card'>
+                  <h1 className='card-title'>this is  a card title</h1>
+                  <p className='card-body'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde possimus laboriosam numquam voluptates? Doloribus at dignissimos commodi, possimus libero itaque velit minus, omnis, animi quibusdam a sapiente nam doloremque adipisci.</p>
+              </div>
+            </div>
+
+            <div className='col-12-xs col-5-sm col-3-xl'>
+              <div className='card'>
+                  <h1 className='card-title'>this is  a card title</h1>
+                  <p className='card-body'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde possimus laboriosam numquam voluptates? Doloribus at dignissimos commodi, possimus libero itaque velit minus, omnis, animi quibusdam a sapiente nam doloremque adipisci.</p>
+              </div>
+            </div>
+        </div>
+        
+        <h2 className="ml-5">font size</h2>
