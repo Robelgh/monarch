@@ -39,8 +39,8 @@ const Navbar = () => {
                     <img src={logo}/>
                 </a>
                 <div className='hamburger' onClick={handleClick}>
-                    {click ? (<i class="bi bi-x-circle lg icon"></i>)
-                        : (<i class="bi bi-list lg icon"></i>)}
+                    {click ? (<i class="bi bi-x-circle icon"></i>)
+                        : (<i class="bi bi-list icon"></i>)}
 
                 </div>
                 <div ref={dropdown_content_el} className="menucontent">

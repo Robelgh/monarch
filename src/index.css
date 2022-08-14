@@ -47,11 +47,11 @@ section {
   padding: 0 20px;
 }
 
-/* .icon 
+.icon 
 {
-  color: red;
+  color:#fdb801;
   font-size: 25px;
-} */
+}
 
 /* UTILITY CLASSES */
 
@@ -107,10 +107,10 @@ h2,
 h3,
 h4 {
   /* font-weight: 500; */
-  line-height: 1.2;
+  /* line-height: 1.2;
   font-family: Didot, serif;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; */
 }
 h1 {
   font-size: 4rem;
