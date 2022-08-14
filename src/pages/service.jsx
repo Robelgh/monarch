@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import Sensor from '../img/sensor.jpg';
-import Fingerprint from '../img/fingerprintaccess.jpg'
-import Antitheft from '../img/anti-theftalarm.jpg'
-import Camer from '../img/camera.jpg'
-import Lcd from '../img/lcd.jpg'
-import Mobilecontrollsecurity from '../img/mobile-controllsecurity.jpg'
+
+import '../css/service.css';
+
+import Sensor from '../images/sensor.jpg';
+import Fingerprint from '../images/fingerprintaccess.jpg'
+import Antitheft from '../images/anti-theftalarm.jpg'
+import Camer from '../images/camera.jpg'
+import Lcd from '../images/lcd.jpg'
+import Mobilecontrollsecurity from '../images/mobile-controllsecurity.jpg'
 
 class service extends Component {
     render() {
@@ -13,10 +16,11 @@ class service extends Component {
               <section id="services" class="services">
                 <div class="container" data-aos="fade-up">
 
-                    <div class="section-title">
+                    <div class="servie-title">
                     <h2>Services</h2>
-                    <p>Check our Services</p>
+                    
                     </div>
+                    <p>Check our Services</p>
 
                     <div class="row">
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">

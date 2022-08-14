@@ -1,45 +1,71 @@
+import React, { useState ,useRef} from 'react'
+// import { FaBars, FaTimes } from 'react-icons/fa'
+import logo from '../images/wegahta.png'
+
+import '../css/navbar.css'
 
 
-function Navbar() {
-  return (
-    <>
-
-     
-<div className="navbar">
- 
- <div className="site-title">MUO</div>
-    <ul>
-    <input type="checkbox" id="checkbox_toggle" />
-    <label for="checkbox_toggle" className="hamburger">&#9776;</label>
-          <div class="menu" >
-          
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li class="services">
-                <span className='area'>
-                  <a href="#">Services</a> *
-{/*                      
-                  <div class="dropdown">
-                      <ul>
-                          <li><a href="/">Dropdown 1 </a></li>
-                          <li><a href="/">Dropdown 2</a></li>
-                          <li><a href="/">Dropdown 2</a></li>
-                          <li><a href="/">Dropdown 3</a></li>
-                          <li><a href="/">Dropdown 4</a></li>
-                      </ul>
-                  </div> */}
-                  </span>  
-              </li>
-              <li className='prices'><a href="/">Pricing</a>
-              </li>
-              <li><a href="/">Contact</a></li>
-          </div>
- 
-</ul>
-</div>
-  
-  </> 
-  );
+const clickOutsideRef = (content_ref) => {
+  document.addEventListener('mousedown', (e) => {
+   
+      
+          if (content_ref.current && !content_ref.current.contains(e.target)) {
+              content_ref.current.classList.add('close')
+          }
+      
+  })
 }
 
-export default Navbar;
+const Navbar = () => {
+
+  const dropdown_content_el = useRef(null)
+
+  clickOutsideRef(dropdown_content_el)
+
+    const [click, setClick] = useState(false)
+
+    const handleClick = () => setClick(!click)
+    const closeMenu = () => setClick(false)
+
+    return (
+         <div>
+          {/* <div className='contactHeader'>
+
+          </div> */}
+
+          <div className='header'>
+            <nav className='navbar'>
+                <a href='/' className='logo'>
+                    <img src={logo}/>
+                </a>
+                <div className='hamburger' onClick={handleClick}>
+                    {click ? (<i class="bi bi-x-circle lg icon"></i>)
+                        : (<i class="bi bi-list lg icon"></i>)}
+
+                </div>
+                <div ref={dropdown_content_el} className="menucontent">
+
+                    <ul   className={click ? "nav-menu active" : "nav-menu"}>
+                        <li className='nav-item'>
+                            <a href='#home' onClick={closeMenu}>Home</a>
+                        </li>
+                        <li className='nav-item'>
+                            <a href='#about' onClick={closeMenu}>About</a>
+                        </li>
+                        <li className='nav-item'>
+                            <a href='#services' onClick={closeMenu}>Service</a>
+                        </li>
+                     
+                        <li className='nav-item'>
+                            <a href='#contact' onClick={closeMenu}>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+         </div>
+       
+    )
+}
+
+export default Navbar
